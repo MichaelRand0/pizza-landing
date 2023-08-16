@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Cheff</title>
-    <meta name="description" content="Самая вкусная пицца в мире только в Pizza Cheff">
+    <meta
+      name="description"
+      content="Самая вкусная пицца в мире только в Pizza Cheff"
+    />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="header">
       <div class="container header__wrapper">
         <div class="logo">
-          <img class="logo__img" src="./assets/img/logo.png" alt="Логотип PizzaCheff" />
+          <img
+            class="logo__img"
+            src="./assets/img/logo.png"
+            alt="Логотип PizzaCheff"
+          />
           <div>
             <div class="logo__text">pizza</div>
             <div class="logo__text">cheff</div>
@@ -21,37 +28,37 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="#" class="header__link">Пиццы</a>
+              <a href="#shop" class="header__link">Пиццы</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Напитки</a>
+              <a href="#shop" class="header__link">Напитки</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Доставка и оплата</a>
+              <a href="#contacts" class="header__link">Доставка и оплата</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Контакты</a>
+              <a href="#contacts" class="header__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <button class="burger header__burger">
+        <button id="burger_btn" class="burger header__burger">
           <div></div>
           <div></div>
           <div></div>
         </button>
-        <nav class="header__nav-mobile">
+        <nav id="burger_menu" class="header__nav-mobile">
           <ul class="header__list-mobile">
             <li class="header__item-mobile">
-              <a href="#" class="header__link">Пиццы</a>
+              <a href="#shop" class="header__link">Пиццы</a>
             </li>
             <li class="header__item-mobile">
-              <a href="#" class="header__link">Напитки</a>
+              <a href="#shop" class="header__link">Напитки</a>
             </li>
             <li class="header__item-mobile">
-              <a href="#" class="header__link">Доставка и оплата</a>
+              <a href="#contacts" class="header__link">Доставка и оплата</a>
             </li>
             <li class="header__item-mobile">
-              <a href="#" class="header__link">Контакты</a>
+              <a href="#contacts" class="header__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -129,16 +136,18 @@
         />
       </section>
 
-      <section class="shop container">
+      <section id="shop" class="shop container">
         <h2 class="shop__title">Выберите свою любимую пиццу</h2>
         <ul class="shop__list">
-          <li class="shop__item">
+          <li data-item="pizza" class="shop__item">
             <div class="shop__info">
-              <img
-                src="./assets/img/Layer 2.png"
-                alt="Мясная Делюкс"
-                class="shop__img"
-              />
+              <button class="shop__img-btn">
+                <img
+                  src="./assets/img/Layer 2.png"
+                  alt="Мясная Делюкс"
+                  class="shop__img"
+                />
+              </button>
               <h4 class="shop__subtitle">Мясная Делюкс</h4>
               <p class="shop__text">
                 Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы,
@@ -147,13 +156,15 @@
             </div>
             <button class="btn-main shop__btn">В корзину</button>
           </li>
-          <li class="shop__item">
+          <li data-item="pizza" class="shop__item">
             <div class="shop__info">
-              <img
-                src="./assets/img/Layer 3.png"
-                alt="Морская Премиум"
-                class="shop__img"
-              />
+              <button class="shop__img-btn">
+                <img
+                  src="./assets/img/Layer 3.png"
+                  alt="Морская Премиум"
+                  class="shop__img"
+                />
+              </button>
               <h4 class="shop__subtitle">Морская Премиум</h4>
               <p class="shop__text">
                 Перец, сыр, креветки, кальмары, мидии, лосось
@@ -161,13 +172,15 @@
             </div>
             <button class="btn-main shop__btn">В корзину</button>
           </li>
-          <li class="shop__item">
+          <li data-item="pizza" class="shop__item">
             <div class="shop__info">
-              <img
-                src="./assets/img/Layer 4.png"
-                alt="Бекон и Сосиски"
-                class="shop__img"
-              />
+              <button class="shop__img-btn">
+                <img
+                  src="./assets/img/Layer 4.png"
+                  alt="Бекон и Сосиски"
+                  class="shop__img"
+                />
+              </button>
               <h4 class="shop__subtitle">Бекон и Сосиски</h4>
               <p class="shop__text">
                 Бекон, сыр, сосиски, ананас, томатная паста
@@ -175,13 +188,15 @@
             </div>
             <button class="btn-main shop__btn">В корзину</button>
           </li>
-          <li class="shop__item">
+          <li data-item="pizza" class="shop__item">
             <div class="shop__info">
-              <img
-                src="./assets/img/Layer 5.png"
-                alt="Куриная Делюкс"
-                class="shop__img"
-              />
+              <button class="shop__img-btn">
+                <img
+                  src="./assets/img/Layer 5.png"
+                  alt="Куриная Делюкс"
+                  class="shop__img"
+                />
+              </button>
               <h4 class="shop__subtitle">Куриная Делюкс</h4>
               <p class="shop__text">
                 Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста
@@ -189,13 +204,15 @@
             </div>
             <button class="btn-main shop__btn">В корзину</button>
           </li>
-          <li class="shop__item">
+          <li data-item="pizza" class="shop__item">
             <div class="shop__info">
-              <img
-                src="./assets/img/Layer 6.png"
-                alt="Барбекю Премиум"
-                class="shop__img"
-              />
+              <button class="shop__img-btn">
+                <img
+                  src="./assets/img/Layer 6.png"
+                  alt="Барбекю Премиум"
+                  class="shop__img"
+                />
+              </button>
               <h4 class="shop__subtitle">Барбекю Премиум</h4>
               <p class="shop__text">
                 Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус
@@ -204,13 +221,15 @@
             </div>
             <button class="btn-main shop__btn">В корзину</button>
           </li>
-          <li class="shop__item">
+          <li data-item="pizza" class="shop__item">
             <div class="shop__info">
-              <img
-                src="./assets/img/Layer 7.png"
-                alt="Пепперони Дабл"
-                class="shop__img"
-              />
+              <button class="shop__img-btn">
+                <img
+                  src="./assets/img/Layer 7.png"
+                  alt="Пепперони Дабл"
+                  class="shop__img"
+                />
+              </button>
               <h4 class="shop__subtitle">Пепперони Дабл</h4>
               <p class="shop__text">
                 Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы,
@@ -219,13 +238,15 @@
             </div>
             <button class="btn-main shop__btn">В корзину</button>
           </li>
-          <li class="shop__item">
+          <li data-item="pizza" class="shop__item">
             <div class="shop__info">
-              <img
-                src="./assets/img/Layer 8.png"
-                alt="Куриное трио"
-                class="shop__img"
-              />
+              <button class="shop__img-btn">
+                <img
+                  src="./assets/img/Layer 8.png"
+                  alt="Куриное трио"
+                  class="shop__img"
+                />
+              </button>
               <h4 class="shop__subtitle">Куриное трио</h4>
               <p class="shop__text">
                 Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр,
@@ -234,13 +255,15 @@
             </div>
             <button class="btn-main shop__btn">В корзину</button>
           </li>
-          <li class="shop__item">
+          <li data-item="pizza" class="shop__item">
             <div class="shop__info">
-              <img
-                src="./assets/img/Layer 9.png"
-                alt="Сырная"
-                class="shop__img"
-              />
+              <button class="shop__img-btn">
+                <img
+                  src="./assets/img/Layer 9.png"
+                  alt="Сырная"
+                  class="shop__img"
+                />
+              </button>
               <h4 class="shop__subtitle">Сырная</h4>
               <p class="shop__text">
                 Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный
@@ -251,7 +274,7 @@
         </ul>
       </section>
 
-      <footer class="footer container">
+      <footer id="contacts" class="footer container">
         <div class="footer__warranty">
           <h2 class="footer__title">
             Хватит думать! <br />
@@ -308,6 +331,13 @@
       <div class="modal__wrapper">
         <p class="modal__text">Спасибо за заказ!</p>
         <button class="btn-main modal__btn">Продолжить</button>
+      </div>
+    </div>
+    
+    <div id="picture" class="picture">
+      <div class="picture__wrapper">
+        <img src="./assets/img/Layer 5.png" alt="" class="picture__img" />
+        <span class="picture__title">Пицца абвгд</span>
       </div>
     </div>
     <script src="./js/index.js"></script>

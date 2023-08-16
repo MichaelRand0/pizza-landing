@@ -438,6 +438,46 @@ input::-webkit-inner-spin-button {
   max-width: 360px;
 }
 
+/* ===PICTURE=== */
+
+.picture {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000be;
+}
+
+.picture_active {
+  display: flex;
+}
+
+.picture__wrapper {
+  padding: 15px 20px;
+  background-color: white;
+  display: flex;
+  border-radius: 4px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture__img {
+  width: 50vw;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.picture__title {
+  font-size: 48px;
+  text-align: center;
+  color: var(--brand_dark-color);
+}
+
 /* ===MODAL=== */
 
 .modal {
@@ -482,12 +522,35 @@ input::-webkit-inner-spin-button {
     justify-content: space-between;
   }
 
+  .shop__item:not(:nth-child(4n)) {
+    margin-right: 0px;
+  }
+
   .logo {
     margin-right: 0px;
   }
 
   .welcome__img {
     max-width: 400px;
+  }
+
+  .shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+
+  .shop__list {
+    max-width: 620px;
+  }
+
+  .shop__item:not(:nth-child(n + 8)) {
+    margin-bottom: 20px;
+  }
+  
+  .shop__item:nth-child(odd) {
+    margin-right: 20px;
   }
 }
 
@@ -516,6 +579,10 @@ input::-webkit-inner-spin-button {
   .welcome__img {
     display: none;
   }
+
+  .footer__img {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -534,6 +601,25 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .picture__img {
+    width: 80vw;
+  }
+
+  .picture__title {
+    font-size: 30px;
+  }
+
+  .footer__warranty {
+    margin-right: 0px;
+    margin-bottom: 50px;
   }
 
   .welcome__item:nth-child(odd) {
@@ -568,6 +654,15 @@ input::-webkit-inner-spin-button {
 
   .header__burger {
     display: block;
+  }
+
+  .shop__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop__item:nth-child(odd) {
+    margin-right: 0px;
   }
 }
 
