@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pizza Cheff</title>
+    <meta name="description" content="Самая вкусная пицца в мире только в Pizza Cheff">
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header class="header">
       <div class="container header__wrapper">
         <div class="logo">
-          <img class="logo__img" src="./assets/img/logo.png" />
+          <img class="logo__img" src="./assets/img/logo.png" alt="Логотип PizzaCheff" />
           <div>
             <div class="logo__text">pizza</div>
             <div class="logo__text">cheff</div>
@@ -94,7 +96,7 @@
               <img
                 src="./assets/img/success.png"
                 class="welcome__icon"
-                alt="Лучшее тесто"
+                alt="Гарантия качества"
               />
               <div>
                 <h3 class="welcome__subtitle">Гарантия качества</h3>
@@ -108,7 +110,7 @@
               <img
                 src="./assets/img/recipe.png"
                 class="welcome__icon"
-                alt="Лучшее тесто"
+                alt="Отборные рецепты"
               />
               <div>
                 <h3 class="welcome__subtitle">Отборные рецепты</h3>
@@ -248,8 +250,66 @@
           </li>
         </ul>
       </section>
+
+      <footer class="footer container">
+        <div class="footer__warranty">
+          <h2 class="footer__title">
+            Хватит думать! <br />
+            <span>Доставим заказ за 30 минут!</span>
+          </h2>
+          <p class="footer__text">
+            Мы гарантированно доставим вашу пиццу за 30 минут c момента
+            оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете
+            весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы
+            гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен
+            и не остался голодный!
+          </p>
+        </div>
+        <form id="form" action="POST" class="footer__form">
+          <input
+            name="name"
+            type="text"
+            required
+            data-input="name"
+            class="input-main footer__input"
+            placeholder="Ваше имя"
+          />
+          <input
+            name="adress"
+            type="text"
+            required
+            data-input="adress"
+            class="input-main footer__input"
+            placeholder="Адрес доставки"
+          />
+          <input
+            name="phone"
+            type="number"
+            required
+            data-input="phone"
+            class="input-main footer__input"
+            placeholder="Телефон"
+          />
+          <input
+            type="submit"
+            class="btn-main footer__btn"
+            value="Оформить заказ"
+          />
+        </form>
+        <img
+          src="./assets/img/pizzzzza.png"
+          alt="PizzaCheff"
+          class="footer__img"
+        />
+      </footer>
     </main>
 
+    <div id="modal" class="modal">
+      <div class="modal__wrapper">
+        <p class="modal__text">Спасибо за заказ!</p>
+        <button class="btn-main modal__btn">Продолжить</button>
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>
