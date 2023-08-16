@@ -49,6 +49,7 @@
 
 body {
   position: relative;
+  overflow-x: hidden;
   font-family: "Muller", "Arial", sans-serif;
 }
 
