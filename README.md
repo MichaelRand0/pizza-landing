@@ -11,6 +11,7 @@
   <li>HTML5</li>
   <li>CSS3</li>
   <li>JavaScript</li>
+  <li>Для анимаций использовал wow.js</li>
 </ul>
 <h2>Что реализовано в проекте:</h2>
 <ul>
